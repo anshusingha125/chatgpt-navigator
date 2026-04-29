@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extension Guideline</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>AI Scroll Navigator</h1>
+            <p>Seamlessly jump through your Gemini and ChatGPT conversations.</p>
+        </div>
+        <a href="https://instagram.com/anshusingha29" target="_blank" class="social-link">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </header>
+
+    <main class="container">
+        <div class="accordion-list">
+            
+            <!-- Section: How It Works -->
+            <div class="accordion-item active">
+                <button class="accordion-header" onclick="toggleAccordion(this)">
+                    <div class="header-title-box">
+                        <div class="title-row">
+                            <i class="fas fa-rocket" style="color: var(--accent);"></i>
+                            How It Works
+                        </div>
+                        <hr class="divider">
+                    </div>
+                    <i class="fas fa-minus toggle-icon"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="content-inner">
+                        <p class="description">The extension scans the page for your queries and creates a dynamic navigation bar on the right side of the screen.</p>
+                        <ul class="step-list">
+                            <li class="step-item">
+                                <span class="step-circle how-step">1</span>
+                                <p class="step-text"><strong>Identify:</strong> It finds every message where the author is "User".</p>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-circle how-step">2</span>
+                                <p class="step-text"><strong>Generate:</strong> It creates a numbered dot for every query found.</p>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-circle how-step">3</span>
+                                <p class="step-text"><strong>Preview:</strong> Hover over a dot to see a tooltip with "Your Query: [Text Content]".</p>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-circle how-step">4</span>
+                                <p class="step-text"><strong>Navigate:</strong> Click a dot to scroll your query to the <span class="accent-hl">top</span> of the window instantly.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section: Installation Guide -->
+            <div class="accordion-item">
+                <button class="accordion-header" onclick="toggleAccordion(this)">
+                    <div class="header-title-box">
+                        <div class="title-row">
+                            <i class="fas fa-terminal" style="color: var(--purple);"></i>
+                            Installation Guide
+                        </div>
+                        <hr class="divider">
+                    </div>
+                    <i class="fas fa-plus toggle-icon"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="content-inner">
+                        <ul class="step-list">
+                            <li class="step-item">
+                                <span class="step-circle install-step">1</span>
+                                <div class="step-text">
+                                    Clone the repo to your device:
+                                    <div class="repo-links">
+                                        <div class="repo-link-item">
+                                            <span class="label">Gemini:</span>
+                                            <a href="https://github.com/anshusingha125/gemini-navigator" class="link">Git repo link</a>
+                                        </div>
+                                        <div class="repo-link-item">
+                                            <span class="label">ChatGPT:</span>
+                                            <a href="https://github.com/anshusingha125/chatgpt-navigator" class="link">Git repo link</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-circle install-step">2</span>
+                                <p class="step-text">Open Chrome and type <code>chrome://extensions/</code> in the address bar.</p>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-circle install-step">3</span>
+                                <p class="step-text">Enable <strong>Developer Mode</strong> in the top right corner.</p>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-circle install-step">4</span>
+                                <p class="step-text">Click <strong>Load unpacked</strong> and select your project folder.</p>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-circle install-step">5</span>
+                                <p class="step-text">Refresh your Gemini or ChatGPT tab and enjoy!</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p class="footer-credit">
+            Made with <i class="fas fa-heart" style="color: var(--purple); margin: 0 4px;"></i> by 
+            <a href="https://www.instagram.com/anshusingha29" target="_blank">Developer Anshu</a>
+        </p>
+        <p class="footer-bio">
+            Specializing in modern web interfaces and functional browser enhancements.
+        </p>
+    </footer>
+
+    <script>
+        function toggleAccordion(button) {
+            const currentItem = button.parentElement;
+            const allItems = document.querySelectorAll('.accordion-item');
+            const isOpen = currentItem.classList.contains('active');
+
+            // Close all others
+            allItems.forEach(item => {
+                item.classList.remove('active');
+                const icon = item.querySelector('.toggle-icon');
+                if (icon) icon.classList.replace('fa-minus', 'fa-plus');
+            });
+
+            // Toggle current
+            if (!isOpen) {
+                currentItem.classList.add('active');
+                button.querySelector('.toggle-icon').classList.replace('fa-plus', 'fa-minus');
+            }
+        }
+    </script>
+</body>
+</html>
