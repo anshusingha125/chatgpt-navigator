@@ -30,7 +30,7 @@
   <li>Open Chrome and type <code>chrome://extensions/</code> in the address bar.</li>
   <li>Enable <b>Developer Mode</b> in the top right corner.</li>
   <li>Click <b>Load unpacked</b> and select your project folder.</li>
-  <li>Refresh your Gemini or ChatGPT tab and enjoy!</li>
+  <li>Refresh your ChatGPT tab and enjoy!</li>
 </ul>
 
 <br />
