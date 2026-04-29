@@ -21,6 +21,8 @@
   <li><b>Navigate:</b> Click a dot to scroll your query to the top of the window instantly.</li>
 </ul>
 
+<br />
+
 <h2>Installation Guide</h2>
 
 <ul>
@@ -30,6 +32,8 @@
   <li>Click <b>Load unpacked</b> and select your project folder.</li>
   <li>Refresh your Gemini or ChatGPT tab and enjoy!</li>
 </ul>
+
+<br />
 
 <h2>Usage</h2>
 
