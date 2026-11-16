@@ -1,14 +1,18 @@
 {
   "manifest_version": 3,
   "name": "ChatGPT Scroll Navigator",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Right sidebar navigator for ChatGPT messages",
   "permissions": ["activeTab"],
+  "icons": {
+    "48": "icon.png"
+  },
   "content_scripts": [
     {
       "matches": ["https://chat.openai.com/*", "https://chatgpt.com/*"],
       "js": ["content.js"],
-      "css": ["style.css"]
+      "css": ["style.css"],
+      "run_at": "document_idle"
     }
   ]
 }
