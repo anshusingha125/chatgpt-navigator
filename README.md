@@ -1,5 +1,9 @@
 <h1 align="center">ChatGPT Scroll Saving & Navigator</h1>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 961dd756042334ad1a0242063a3efe1bb7c8dca2
 <p align="center">
   <strong>Seamlessly jump through your ChatGPT conversations!</strong>
 </p>
@@ -25,8 +29,12 @@
 <h2>Installation Guide</h2>
 
 <ul>
+<<<<<<< HEAD
   <li><b>Option 1:</b> Clone the repo to your device: <a href="https://github.com/anshusingha125/chatgpt-navigator">ChatGPT Navigator</a></li>
   <li><b>Option 2:</b> Download the repository as a <b>ZIP file</b> from GitHub, extract/unzip it to any folder on your PC.</li>
+=======
+  <li>Clone the repo to your device: <a href="https://github.com/anshusingha125/chatgpt-navigator">ChatGPT Navigator</a></li>
+>>>>>>> 961dd756042334ad1a0242063a3efe1bb7c8dca2
   <li>Open Chrome and type <code>chrome://extensions/</code> in the address bar.</li>
   <li>Enable <b>Developer Mode</b> in the top right corner.</li>
   <li>Click <b>Load unpacked</b> and select your project folder.</li>
@@ -39,4 +47,8 @@
 
 <p>
   Simply open any long conversation on ChatGPT. The navigation bar will automatically appear on the right, indexing your queries as you chat!
+<<<<<<< HEAD
 </p>
+=======
+</p>
+>>>>>>> 961dd756042334ad1a0242063a3efe1bb7c8dca2
